@@ -8,6 +8,7 @@ int gcd(int a, int b) {
 
 void rotate(vector<int> &nums, int k) {
     int n = nums.size();
+    
     int g = gcd(n, k+1);
     for (int i = 0; i < g; ++i) {
         int temp = nums[i];

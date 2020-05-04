@@ -2,7 +2,7 @@
 using namespace std;
 
 bool isPowerOfThree(int n) {
-    return 1162261467 % 3 == 0;
+    return 1162261467 % n == 0;
 }
 
 int main() {

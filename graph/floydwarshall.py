@@ -17,6 +17,11 @@ def shortestpath(graph: [[int]], start: int, end: int) -> [int]:
     path = []
     dp = [[None for _ in range(len(graph))] for _ in range(len(graph))]
     next = [[None for _ in range(len(graph))] for _ in range(len(graph))]
+    for i in range(len(graph)):
+        for j in range(len(graph)):
+            dp[i][j] = graph[i][j]
+            if graph[i][j] != float('inf'):
+                next[i][j] = j
     floydwarshall(graph, dp, next)
     if dp[start][end] == float('inf'):
         return path

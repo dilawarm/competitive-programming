@@ -49,9 +49,6 @@ int main()
     }
     words_len.push_back(curr_len);
 
-    for (auto &len : words_len)
-        cout << len << endl;
-
     int l = 0, r = 1e5;
     int mid;
     while (l < r)
